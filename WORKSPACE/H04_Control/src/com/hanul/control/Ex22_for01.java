@@ -80,8 +80,8 @@ public class Ex22_for01
 		no4 = sc.nextInt();
 		
 		for (int no1 = 1; no1<= no4; no1 ++)
-		sum2 += no1;
-		{	
+		
+		{	sum2 += no1;
 			System.out.println(sum2);
 		}
 		

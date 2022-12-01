@@ -18,7 +18,9 @@ public class Ex20_dicewhile
 			 user = r.nextInt(6) + 1;
 			 computer = r.nextInt(6) +1;
 			System.out.printf("사용자 : %d, 컴퓨터 : %d\n" , user , computer);
-			
+	
+		}while( user == computer );
+		
 			if(user > computer)
 			{
 				System.out.println("사용자 승!");
@@ -29,9 +31,6 @@ public class Ex20_dicewhile
 				System.out.println("컴퓨터 승!");
 			}
 
-			
-		}while( user == computer );
-		
 				
 	}
 

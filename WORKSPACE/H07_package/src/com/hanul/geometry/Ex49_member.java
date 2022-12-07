@@ -1,6 +1,6 @@
-package com.hanul.object;
+package com.hanul.geometry;
 
-public class Ex38_member
+public class Ex49_member
 {
 	// 회원의 이름, 아이디, 패스워드, 폰번호, 나이
 	// 회원 객체를 처음 생성할 때 이름, 아이디, 패스워드는 무조건 입력
@@ -8,23 +8,23 @@ public class Ex38_member
 	// 메소드 :
 	// 폰번호 변경, 패스워드 변경, 나이 변경 메소드를 작성하시오
 	
-	String name;
-	String identi;
-	String password;
-	String phonenum;
-	int age;
+	public String name;
+	public String identi;
+	public String password;
+	public String phonenum;
+	public int age;
 	
 	
 
 	// 생성자
-	public Ex38_member(String name, String identi, String password)
+	public Ex49_member(String name, String identi, String password)
 	{
 		this.name = name;
 		this.identi = identi;
 		this.password = password;		
 	}
 
-	public Ex38_member(String name, String identi, String password, String phonenum)
+	public Ex49_member(String name, String identi, String password, String phonenum)
 	{
 		this.name = name;
 		this.identi = identi;
@@ -34,7 +34,7 @@ public class Ex38_member
 	}
 	
 
-	public Ex38_member(String name, String identi, String password, int age)
+	public Ex49_member(String name, String identi, String password, int age)
 	{
 		this.name = name;
 		this.identi = identi;
@@ -42,7 +42,7 @@ public class Ex38_member
 		this.age = age;
 	}
 
-	public Ex38_member(String name, String identi, String password, String phonenum, int age)
+	public Ex49_member(String name, String identi, String password, String phonenum, int age)
 	{
 		this.name = name;
 		this.identi = identi;
@@ -53,19 +53,19 @@ public class Ex38_member
 	
 	
 	// 전화번호 변경 
-	void changephonenum(String phonenum)
+	public void changephonenum(String phonenum)
 	{
 		this.phonenum = phonenum;
 	}
 	
 	// 나이 변경
-	void changeage(int age)
+	public void changeage(int age)
 	{
 		this.age = age;
 	}
 	
 	//패스워드 변경
-	void changeage(String password)
+	public void changepassoword(String password)
 	{
 		this.password = password;
 	}

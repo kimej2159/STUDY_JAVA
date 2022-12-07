@@ -1,22 +1,27 @@
-package com.hanul.object;
+package com.hanul.pack;
 
-public class Ex39_membermain
+import com.hanul.geometry.Ex49_member;
+
+public class Ex50_membermain
 {
 	public static void main(String[] args) 
 	{
 		
-	Ex38_member sim = new Ex38_member
+	Ex49_member sim = new Ex49_member
 					("심청이", "CHUG", "0002", "010-0000-0000", 16);
 //	printmember(sim.name, sim.identi, sim.password, sim.phonenum, sim.age);
 	printmember(sim);
 	
-	Ex38_member hong = new Ex38_member("홍길동", "HONGS", "0001");	
+	Ex49_member hong = new Ex49_member("홍길동", "HONGS", "0001");	
 //	printmember(hong.name, hong.identi, hong.password, hong.phonenum, hong.age);
 	printmember(hong);
 	
+	hong.changephonenum("010-2222-2222");
+	hong.changepassoword("jk14545");
+	hong.changeage(25);
 	}
 	
-	static void printmember(Ex38_member member)
+	static void printmember(Ex49_member member)
 	{ 
 		System.out.println("이름 :  " + member.name);
 		System.out.println("아이디 : " + member.identi);

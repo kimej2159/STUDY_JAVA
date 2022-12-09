@@ -1,6 +1,6 @@
 package com.hanul.inheritance;
 
-public class Ex53_peopel {
+abstract public class Ex53_peopel {
 	
 	//학번 이름 나이
 	// 먹는다, 잠을 잔다, 학교에 간다
@@ -25,8 +25,15 @@ public class Ex53_peopel {
 		System.out.println(name + "은(는) 잠잔다.");
 	}
 	
-	void gotowork() { 
-		System.out.println(name + "은(는) 출근한다.");
-	}
+	
+	abstract void go();
 
 }
+
+
+
+
+
+
+
+

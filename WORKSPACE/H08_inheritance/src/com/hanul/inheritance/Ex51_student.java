@@ -17,7 +17,11 @@ public class Ex51_student extends Ex53_peopel{
 
 
 
-	void gotoschool() { 
+
+
+	@Override
+	void go() {
+		// TODO Auto-generated method stub
 		System.out.println(name + "은(는) 학교간다.");
 	}
 }

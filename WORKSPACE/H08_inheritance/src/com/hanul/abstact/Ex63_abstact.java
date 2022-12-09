@@ -1,11 +1,11 @@
 package com.hanul.abstact;
 
-public class Ex67_abstact
+public class Ex63_abstact
 {
 	String kind;
 	
 	
-	public Ex67_abstact(String kind)
+	public Ex63_abstact(String kind)
 	{
 		this.kind = kind;
 	}

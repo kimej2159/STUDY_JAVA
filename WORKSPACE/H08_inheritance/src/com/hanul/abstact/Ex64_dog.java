@@ -1,6 +1,6 @@
 package com.hanul.abstact;
 
-public class Ex64_dog extends Ex67_abstact
+public class Ex64_dog extends Ex63_abstact
 {
 
 	

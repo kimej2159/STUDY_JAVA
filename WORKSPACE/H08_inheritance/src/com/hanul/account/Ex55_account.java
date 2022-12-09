@@ -1,6 +1,8 @@
 package com.hanul.account;
 
-public class Ex55_account {
+// abstract			-- 하나의 상속만 받도록 해준다
+public class Ex55_account 
+{
 
 	// 필드: 계좌번호(String:accountNo), 예금주(String:owner), 잔액(int:balance)
 	// 메소드: 예금한다 메소드, 출금한다 메소드
@@ -15,31 +17,43 @@ public class Ex55_account {
 	// 생성자 
 	public Ex55_account() {	}
 	
-	public Ex55_account(String accountNo, String owner) {		
+	public Ex55_account(String accountNo, String owner)
+	{		
 		this.accountNo = accountNo;
 		this.owner = owner;		
 	}
 	
-	public Ex55_account(String accountNo, String owner, int balance) {		
+	public Ex55_account(String accountNo, String owner, int balance)
+	{		
 		this(accountNo, owner);
 		this.balance = balance;
 	}
 	
 	// 예금하기
-	void deposite(int amount) {
+	void deposite(int amount)
+	{
 		balance += amount; 
 	}
 	
 	// 만약 잔액보다 출금액이 많으면 예외처리 retun 0;
-	int withdraw(int amount) throws Exception {
-		if(balance < amount) {
+	int withdraw(int amount) throws Exception 
+	{
+		if(balance < amount)
+		{
 			throw new Exception("잔액이 부족합니다!!!");
 		}
 		balance -= amount;
 		return amount;
 	}
-
-	
-	
 	
 }
+
+
+
+
+
+
+
+
+
+

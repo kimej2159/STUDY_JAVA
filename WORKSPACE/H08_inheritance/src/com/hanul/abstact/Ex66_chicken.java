@@ -1,6 +1,6 @@
 package com.hanul.abstact;
 
-public class Ex66_chicken extends Ex67_abstact
+public class Ex66_chicken extends Ex63_abstact
 {
 	String kind;
 	

@@ -1,6 +1,6 @@
 package com.hanul.abstact;
 
-public class Ex68_abstactmain
+public class Ex67_abstactmain
 {
 	public static void main(String[] args)
 	{

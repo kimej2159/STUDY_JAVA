@@ -15,24 +15,22 @@ public class Ex75_byteIOMain{
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println(" 원하는 단을 입력하세요 : ");
-		int num = sc.nextInt();
-//		for(int no1 = 1; no1 <= 9; no1++)
-//		{
-//			System.out.printf("%d x %d = " + no1*num, num , no1);
-//			System.out.println();
-//		}
-//		
+		int dan = sc.nextInt();
+		sc.close();
 		
 		
+		byte data[] = new byte[9];
+		
+		for(int by=1; by<=9; by++)
+		{
+			data[by-1] = (byte)(dan*by);		// 0~8가지 인덱스에 값이 들어감
+		}
+		
+		String filename = dan + "단.dat";
 		FileOutputStream out = null;
+		
 		try{
-			out = new FileOutputStream("3단.dat");
-			byte[] data = { (byte) sc.nextInt()};
-			
-			for(int i=0; i<10; i++)
-			{
-				System.out.printf("%d x %d = " + num*i, num , i);
-			}
+			out = new FileOutputStream(filename);
 			out.write(data);
 			
 			}catch(Exception e) {
@@ -46,15 +44,18 @@ public class Ex75_byteIOMain{
 					e.printStackTrace();
 				}
 					}
+		System.out.println("바이트 파일 쓰기 완료");
+		
+		System.out.println("파일 내용 열기");
 		
 		FileInputStream in = null;
 		
 		try {
-			in = new FileInputStream("3단.dat");
-			int data;
-			while((data = in.read()) !=-1)
+			in = new FileInputStream(filename);
+			int no;
+			while((no = in.read()) !=-1)
 			{
-				System.out.println(data);
+				System.out.println(no);
 			}
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

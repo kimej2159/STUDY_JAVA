@@ -77,6 +77,12 @@ public class Ex76_bufferediomain{
 			}
 		}catch ( Exception e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				in.close();
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
 		}
 		
 		

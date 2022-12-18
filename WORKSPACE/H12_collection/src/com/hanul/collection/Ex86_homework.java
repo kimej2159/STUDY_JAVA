@@ -1,5 +1,13 @@
 package com.hanul.collection;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.naming.Name;
+
 public class Ex86_homework {
 
 	// Homework1_본인이름 -> 폴더를 zip파일로 만들어 이름을 붙인후 제출
@@ -15,4 +23,54 @@ public class Ex86_homework {
 	// 연락처: 010-4176-2159
 	// 주  소: kimej2159@naver.com
 	
+	public static void main(String[] args) {
+	
+		ArrayList<Ex85_1_Student> studArrarylist = new ArrayList<>();
+		
+		
+		BufferedReader in = null;
+		try {
+			in = new BufferedReader(new FileReader("list.txt"));
+			String data;
+			while((data = in.readLine()) != null) { 
+				
+			String[] studentarr = data.split(",");	
+			
+			Scanner sc = new Scanner(System.in);
+			System.out.print("조회할 사람의 이름을 입력하세요 : ");
+			String search = sc.next();
+				
+			
+			if(search == null)
+			{
+				System.out.println(search + "은 없는 사람입니다.");
+			}
+			
+			else
+				
+			{
+				System.out.println("성명 : " + studentarr[0]);
+				System.out.println("성별 : " + studentarr[1]);
+				System.out.println("연락처 : " + studentarr[2]);
+				System.out.println("이메일 : " + studentarr[3]);
+				System.out.println();
+			}
+			
+			
+			
+			
+		}
+		}catch ( Exception e) {
+			e.printStackTrace();
+		}finally {
+			try {
+				in.close();
+			} catch(IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+	
+	
+	}
 }

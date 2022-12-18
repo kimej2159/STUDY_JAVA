@@ -16,7 +16,8 @@ public class Ex85_1_Student {
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		
+		System.out.printf("성명 : %s\n", this.name = name);
 	}
 
 	public String getGender() {

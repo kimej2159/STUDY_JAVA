@@ -1,0 +1,12 @@
+xml 형태
+<name>홍길동</name>
+<gender>남</gender>
+<phone>010-1111-1111</phone>
+<email>ghdrlfehd@naver.com</email>
+
+json 형태
+[
+{name:홍길동, gender:남, phone:010-1111-1111, email:ghdrlfehd@naver.com},
+{name:홍길동, gender:남, phone:010-1111-1111, email:ghdrlfehd@naver.com},
+{name:홍길동, gender:남, phone:010-1111-1111, email:ghdrlfehd@naver.com}
+]

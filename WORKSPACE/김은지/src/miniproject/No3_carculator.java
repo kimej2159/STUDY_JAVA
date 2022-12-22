@@ -1,8 +1,6 @@
-package com.hanul.jdbc;
+package miniproject;
 
-
-public class Calculator {
-	
+public class No3_carculator {
 	
 	static int printadd(int no1, int no2)
 	{
@@ -31,11 +29,5 @@ public class Calculator {
 		System.out.printf("나눗셈 : %d / %d = %d\n" ,no1, no2, sum4);
 		return sum4;
 	}
-	
-		
-	
-	}
 
-	
-
-
+}

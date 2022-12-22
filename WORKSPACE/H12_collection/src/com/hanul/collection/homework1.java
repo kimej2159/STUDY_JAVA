@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 import javax.naming.Name;
 
-public class Ex86_homework {
+public class homework1 {
 
 	// Homework1_본인이름 -> 폴더를 zip파일로 만들어 이름을 붙인후 제출
 	// [과제]
